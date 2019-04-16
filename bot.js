@@ -3,11 +3,11 @@ const RichEmbed = require("discord.js");
 const fs = require('fs')
 const { Client, Util } = require('discord.js');
 const client = new Discord.Client();
-const prefix = "#";
+const prefix = "R";
  
-const devs = ["516583452699656192"]
+const devs = ["535590684120580116"]
  
-const adminprefix = "#";
+const adminprefix = "R";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!devs.includes(message.author.id)) return;
